@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bloom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="cursor"></div>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <h1>Brew & Bloom</h1>
+    </div>
+
+    <div class="hamburger">
+        ☰
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="nav-btn">
+        <button>Order Now</button>
+    </div>
+<div class="cart">
+🛒 Cart (<span id="cart-count">0</span>)
+</div>
+</nav>
+
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>Experience The Perfect Coffee</h1>
+
+        <p>Crafted with passion, served with love.</p>
+
+        <button>Explore Menu</button>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <img src="images/coffee.jpg" alt="Coffee">
+
+    </div>
+
+</section>
+
+
+
+<section class="coffee-section" id="menu">
+
+<h2>Our Cafe Menu</h2>
+
+
+<div class="filter-buttons">
+
+<button data-filter="all">All</button>
+<button data-filter="coffee">Coffee</button>
+<button data-filter="cold">Cold Drinks</button>
+<button data-filter="snacks">Cookies</button>
+<button data-filter="dessert">Ice Cream</button>
+
+</div>
+
+<div class="order-modal">
+
+    <div class="modal-box">
+
+        <span class="close">&times;</span>
+
+        <h2>Order Your Coffee</h2>
+
+        <input type="text" placeholder="Your Name">
+
+        <input type="text" placeholder="Item Name">
+<select>
+    <option>Select Payment</option>
+    <option>Cash</option>
+    <option>UPI</option>
+</select>
+        <button>
+            Place Order
+        </button>
+
+    </div>
+
+</div>
+
+<div class="menu-grid">
+
+
+<div class="menu-card" data-category="coffee">
+<img src="images/espresso.jpg" alt="Espresso">
+<h3>Espresso</h3>
+<p>Strong and rich coffee experience.</p>
+<h4>₹200</h4>
+
+<button class="add-cart">
+Add to Cart
+</button>
+</div>
+
+
+
+<div class="menu-card" data-category="coffee">
+<img src="images/latte.jpg" alt="Latte">
+<h3>Latte</h3>
+<p>Smooth and creamy coffee blend.</p>
+<h4>₹250</h4>
+
+<button class="add-cart">
+Add to Cart
+</button>
+</div>
+
+
+
+<div class="menu-card" data-category="coffee">
+<img src="images/mocha.jpg" alt="Mocha">
+<h3>Mocha</h3>
+<p>Chocolate infused coffee delight.</p>
+<h4>₹300</h4>
+
+<button class="add-cart">
+Add to Cart
+</button>
+</div>
+
+
+
+<div class="menu-card" data-category="coffee">
+<img src="images/cappuccino.jpg" alt="Cappuccino">
+<h3>Cappuccino</h3>
+<p>Rich espresso with creamy foam.</p>
+<h4>₹220</h4>
+
+<button class="add-cart">
+Add to Cart
+</button>
+</div>
+
+
+
+<div class="menu-card" data-category="coffee">
+<img src="images/americano.jpg" alt="Americano">
+<h3>Americano</h3>
+<p>Espresso blended with hot water.</p>
+<h4>₹200</h4>
+
+<button class="add-cart">
+Add to Cart
+</button>
+</div>
+
+
+
+<div class="menu-card" data-category="cold">
+<img src="images/coldbrew.jpg" alt="Cold Brew">
+<h3>Cold Brew</h3>
+<p>Smooth refreshing cold coffee.</p>
+<h4>₹180</h4>
+<button class="add-cart">
+Add to Cart
+</button>
+</div>
+
+
+
+<div class="menu-card" data-category="cold">
+<img src="images/icedlatte.jpg" alt="Iced Latte">
+<h3>Iced Latte</h3>
+<p>Chilled espresso with creamy milk.</p>
+<h4>₹220</h4>
+<button class="add-cart">
+Add to Cart
+</button>
+</div>
+
+
+
+<div class="menu-card" data-category="cold">
+<img src="images/icedmocha.jpg" alt="Iced Mocha">
+<h3>Iced Mocha</h3>
+<p>Chocolate flavored cold coffee.</p>
+<h4>₹300</h4>
+<button class="add-cart">
+Add to Cart
+</button>
+</div>
+
+
+
+<div class="menu-card" data-category="snacks">
+<img src="images/chocolate-cookie.jpg" alt="Cookie">
+<h3>Chocolate Cookie</h3>
+<p>Fresh baked crunchy cookie.</p>
+<h4>₹80</h4>
+<button class="add-cart">
+Add to Cart
+</button>
+</div>
+
+
+
+<div class="menu-card" data-category="snacks">
+<img src="images/butter-cookie.jpg" alt="Butter Cookie">
+<h3>Butter Cookie</h3>
+<p>Classic buttery cookie.</p>
+<h4>₹70</h4>
+<button class="add-cart">
+Add to Cart
+</button>
+</div>
+
+
+
+<div class="menu-card" data-category="dessert">
+<img src="images/vanilla-ice-cream.jpg" alt="Vanilla Ice Cream">
+<h3>Vanilla Ice Cream</h3>
+<p>Creamy vanilla scoop.</p>
+<h4>₹150</h4>
+<button class="add-cart">
+Add to Cart
+</button>
+</div>
+
+
+
+<div class="menu-card" data-category="dessert">
+<img src="images/brownie-sundae.jpg" alt="Brownie Sundae">
+<h3>Brownie Sundae</h3>
+<p>Brownie topped with ice cream.</p>
+<h4>₹250</h4>
+<button class="add-cart">
+Add to Cart
+</button>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section class="about" id="about">
+
+<div class="about-image">
+<img src="images/making.jpg" alt="Coffee Making">
+</div>
+
+
+<div class="about-content">
+
+<h2>More Than Just Coffee</h2>
+
+<p>
+At Brew & Bloom, every cup is crafted with passion,
+premium beans and unforgettable moments.
+</p>
+
+<button>Discover More</button>
+
+</div>
+
+</section>
+
+
+
+
+<section class="process">
+
+<h2>From Bean To Cup</h2>
+
+<div class="process-cards">
+
+
+<div class="process-card">
+<h3>01</h3>
+<h4>Select Beans</h4>
+<p>Premium coffee beans selected carefully.</p>
+</div>
+
+
+<div class="process-card">
+<h3>02</h3>
+<h4>Roasting</h4>
+<p>Beans roasted for rich flavours.</p>
+</div>
+
+
+<div class="process-card">
+<h3>03</h3>
+<h4>Brewing</h4>
+<p>Perfectly brewed coffee.</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<footer id="contact">
+
+<h2>Brew & Bloom</h2>
+
+<p>Crafting perfect coffee moments.</p>
+
+</footer>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script src="script.js"></script>
+
+<div class="cart-panel">
+
+    <div class="cart-header">
+
+        <h2>Your Cart</h2>
+
+        <span class="cart-close">
+            &times;
+        </span>
+
+    </div>
+
+
+    <div class="cart-items">
+
+    </div>
+
+
+    <h3 class="cart-total">
+        Total: ₹0
+    </h3>
+
+
+</div>
+</body>
+</html>
